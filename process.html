@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha-BornGreat - RecyclingProcess</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            background-color: #f0f0f5;
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            width: 200px;
+            background-color: #0033cc;
+            color: white;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+            border-radius: 5px;
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+        .sidebar a:hover {
+            background-color: #0044ff;
+        }
+
+        /* Main content styles */
+        .main-content {
+            margin-left: 270px; /* Leave space for the sidebar */
+            flex: 1;
+            padding: 20px;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .video-card {
+            flex: 1 1 30%; /* Each video occupies up to 30% of the width */
+            max-width: 300px;
+            text-align: center;
+            background: #ffffff;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .video-card video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .video-title {
+            padding: 10px;
+            background-color: #0033cc;
+            color: white;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        @media (max-width: 768px) {
+            .video-card {
+                flex: 1 1 45%; /* Adjust for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .video-card {
+                flex: 1 1 100%; /* Stack videos on very small screens */
+            }
+
+            .sidebar {
+                width: 200px; /* Reduce sidebar width for smaller screens */
+            }
+
+            .main-content {
+                margin-left: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Navigation</h2>
+        <a href="coverPage.html">Cover Page</a>
+        <a href="homePage.html">Home</a>
+        <a href="AboutUsPage.html">About</a>
+        <a href="Benefits.html">Benefits</a>
+        <a href="Alpha_News.html">News</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1 style="text-align: center; color: #0033cc;">Alpha's Plastic Recycling Process</h1>
+
+        <div class="video-container">
+            <!-- Collecting Video -->
+            <div class="video-card">
+                <video controls>
+                    <source src="./videos/collectingPlastics.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Collecting</div>
+            </div>
+
+            <!-- Sorting Video -->
+            <div class="video-card">
+                <video controls>
+                    <source src="./videos/sortingPlastics.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Sorting</div>
+            </div>
+
+            <!-- Washing Video -->
+            <div class="video-card">
+                <video controls>
+                    <source src="./videos/machingSougthingPlastic.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Washing</div>
+            </div>
+
+            <!-- Melting Video -->
+            <div class="video-card">
+                <video controls>
+                    <source src="./videos/meltingPlastics.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Melting</div>
+            </div>
+
+            <!-- Remolding Video -->
+            <div class="video-card">
+                <video controls>
+                    <source src="./videos/RemoldedPlastics.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Remolding</div>
+            </div>
+
+            <!-- Final Video -->
+            <div class="video-card">
+                <video controls>
+                    <source src="./videos/finalProduct.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-title">Final Product</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
